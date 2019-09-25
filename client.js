@@ -7,6 +7,13 @@ const connect = function() {
     host: '192.168.43.245',
     port: 50541
   });
+
+  conn.on('connect', () => {
+    console.log('Successfully connected to game server')
+    conn.write("Name: TDK");
+  });
+
+
   // interpret incoming data as text
   conn.setEncoding('utf8');
 
