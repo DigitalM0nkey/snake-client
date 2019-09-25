@@ -9,9 +9,30 @@ const connect = function() {
   });
 
   conn.on('connect', () => {
-    console.log('Successfully connected to game server')
+    console.log('Successfully connected to game server');
     conn.write("Name: TDK");
+
+
   });
+  // conn.on('connect', () => {
+  //   setTimeout(() => {
+  //     conn.write("Move: up");
+  //   }, 50);
+  //   setTimeout(() => {
+  //     conn.write("Move: up");
+  //   }, 100);
+  //   setTimeout(() => {
+  //     conn.write("Move: up");
+  //   }, 150);
+  //   setTimeout(() => {
+  //     conn.write("Move: up");
+  //   }, 200);
+  //   //conn.write("Move: up");
+  //   //conn.write("Name: TDK");
+  //   console.log("Here");
+
+  // });
+
 
 
   // interpret incoming data as text
