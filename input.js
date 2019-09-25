@@ -26,6 +26,10 @@ const handleUserInput = (data) => {
     connection.write("Move: right");
   } else if (data === 'k') {
     connection.write("Move: down");
+  } else if (data === 'u') {
+    connection.write("Say: Outta My Way!!");
+  } else if (data === 'o') {
+    connection.write("Say: Go on..... GET!!!");
   } else if (data === 'I') {
     for (let i = 0; i < moves; i++) {
       setTimeout(() => {
